@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #28a745;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Confirmed!</h1>
+    <p>Thank you for your purchase. Your order has been successfully processed.</p>
+    <button onclick="goToHome()">Back to Home Page</button>
+
+    <script>
+        function goToHome() {
+            window.location.href = "index.html"; // Replace "index.html" with your homepage URL
+        }
+    </script>
+</body>
+</html>

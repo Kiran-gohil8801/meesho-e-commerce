@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS PAGE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        #product-details {
+            margin-top: 130px;
+            height: 600px;
+            width: 500px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        #product-details img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        #img-details {
+            height: 600px;
+            margin-top: 130px;
+            height: 600px;
+        }
+
+        #img-details1 {
+            height: 290px;
+            width: 700px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #img-details1 h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        #img-details1 h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #28a745;
+        }
+
+        #img-details1 p {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        #img-details1 button {
+            font-size: 16px;
+            color: #fff;
+            background-color: #ed0ed3;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+
+        #img-details1 button:hover {
+            background-color: #eb53c3;
+        }
+
+        #img-details2 {
+            margin-top: 10px;
+            height: 300px;
+            width: 700px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #img-details2 h4 {
+            font-weight: 600;
+        }
+
+        #img-details2 p {
+            font-size: medium;
+            font-weight: 600;
+            color: #6c757d;
+        }
+
+
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+
+            #product-details,
+            #img-details1,
+            #img-details2 {
+                width: 90%;
+            }
+
+            #product-details img {
+                height: auto;
+            }
+
+            .container-fluid {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            #product-details,
+            #img-details {
+                height: auto;
+            }
+
+            #product-details img {
+                height: auto;
+            }
+
+            #img-details1,
+            #img-details2 {
+                height: auto;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+
+            .footer-section1,
+            .footer-section2,
+            .footer-section3,
+            .footer-section4 {
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            
+            #product-details img {
+                height: auto;
+            }
+
+            #img-details1 button,
+            #img-details1 button+button {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header bg-white shadow-sm">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+            <!-- Logo -->
+            <div class="logo">
+                meesho
+            </div>
+
+            <!-- Search Bar -->
+            <!-- <div id="search">
+                <p><input type="search" placeholder="Search products..." class="search-bar" style="width: 100%;"></p>
+            </div> -->
+
+            <nav class="nav-links d-flex align-items-center flex-wrap d-none d-md-flex" style="width: 50%;">
+                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=HP&pow_distinct_id=18f19dd55071b5-021e8c14251b4-26001d51-144000-18f19dd55084f3"
+                    class="text-dark text-decoration-none">
+                    <i class="fas fa-mobile-alt"></i> Download App
+                </a>
+                <a href="#" class="text-dark text-decoration-none"><i class="bi bi-people"></i> Become a Supplier</a>
+                <a href="#" class="text-dark text-decoration-none"><i class="bi bi-journal"></i> Newsroom</a>
+                <a href="Profile.html" class="text-dark text-decoration-none"><i class="fas fa-user-alt"></i>Profile</a>
+                <a href="cart.html" class="text-dark text-decoration-none"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </nav>
+
+
+            <div class="d-md-none">
+                <nav class="navbar navbar-expand-md navbar-light">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=HP&pow_distinct_id=18f19dd55071b5-021e8c14251b4-26001d51-144000-18f19dd55084f3"
+                                    class="nav-link"><i class="fas fa-mobile-alt"></i> Download App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-people"></i> Become a Supplier</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-journal"></i> Newsroom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Profile.html" class="nav-link"><i class="fas fa-user"></i> Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+
+    <header class="header2">
+        <ul class="head2">
+            <a href="women's.html">
+                <li>Women Ethics</li>
+            </a>
+            <a href="women's.html">
+                <li>Women Westren</li>
+            </a>
+            <a href="men's.html">
+                <li>Men</li>
+            </a>
+            <a href="kid's.html">
+                <li>Kids</li>
+            </a>
+            <a href="Kitchen.html">
+                <li>Home & Kitchen</li>
+            </a>
+            <a href="Health.html">
+                <li>Beauty & Health</li>
+            </a>
+            <a href="Accesories.html">
+                <li>Jewellery & Accesories</li>
+            </a>
+            <a href="footware.html">
+                <li>Bags & Footware</li>
+            </a>
+            <a href="Electronic.html">
+                <li>Electronic</li>
+            </a>
+            <a href="">
+                <li>Sports & Fitness</li>
+            </a>
+        </ul>
+    </header>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        <div id="product-details">
+
+        </div>
+        <div id="img-details">
+            <div id="img-details1"></div>
+            <div id="img-details2">
+
+                <!-- Section Title -->
+                <h4>Product Ratings & Reviews</h4>
+
+                <div class="row align-items-center">
+                    <!-- Rating Summary -->
+                    <div class="col-md-3 text-center">
+                        <h1 class="display-4 text-success" style="font-weight: 700;">4.2 ★</h1>
+                        <p class="mb-0" style="font-size: 15px;">71,120 Ratings</p>
+                        <p style="font-size: 15px;">24,532 Reviews</p>
+                    </div>
+
+                    <!-- Rating Breakdown -->
+                    <div class="col-md-9">
+                        <!-- Excellent -->
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2 mt-3"
+                                style="color: #6c757d; font-size: 15px; font-weight: 600;">Excellent</span>
+                            <div class="progress flex-grow-1 mt-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2 mt-3"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">35,816</span>
+                        </div>
+                        <!-- Very Good -->
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2 mt-2" style="color: #6c757d; font-size: 15px; font-weight: 600;">Very
+                                Good</span>
+                            <div class="progress flex-grow-1 mt-2" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 30%;"
+                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">21,468</span>
+                        </div>
+                        <!-- Good -->
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2 mt-2"
+                                style="color: #6c757d; font-size: 15px; font-weight: 600;">Good</span>
+                            <div class="progress flex-grow-1 mt-2" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 12%;"
+                                    aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">8,706</span>
+                        </div>
+                        <!-- Average -->
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600; ">Average</span>
+                            <div class="progress flex-grow-1 mt-2" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 5%;"
+                                    aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">1,648</span>
+                        </div>
+                        <!-- Poor -->
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">Poor</span>
+                            <div class="progress flex-grow-1 mt-2" style="height: 8px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 3%;"
+                                    aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2 mt-2"
+                                style="color: #6c757d; font-size: 15px;font-weight: 600;">3,482</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section1">
+                <h4>Shop Non-Stop on Meesho</h4>
+                <p>Trusted by more than 1 crore Indians <br>Cash On Delivery | Free Delivery</p>
+                <div class="app-links">
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=HP&pow_distinct_id=18f19dd55071b5-021e8c14251b4-26001d51-144000-18f19dd55084f3"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play"></a>
+                    <a href="https://apps.apple.com/us/app/meesho-online-shopping/id1457958492"><img
+                            src="https://images.meesho.com/images/pow/appstoreIcon_500.webp" alt="App Store"></a>
+                </div>
+            </div>
+
+            <div class="footer-section2">
+                <h4>Careers</h4>
+                <ul>
+                    <li><a href="">Become a supplier</a></li>
+                    <li><a href="">Hall of Fame</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section3">
+                <h4>Reach out to us</h4>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/meeshosupply"><i class="fab fa-facebook-f"
+                            style="color: black;"></i></a>
+                    <a href="https://www.instagram.com/meeshoapp/"><i class="fab fa-instagram"
+                            style="color: black;"></i></a>
+                    <a href="https://www.youtube.com/channel/UCaGHIRKYUYlaI_ZAt2hxpjw"><i class="fab fa-youtube"
+                            style="color: black;"></i></a>
+                    <a href="https://www.linkedin.com/company/meesho/"><i class="fab fa-linkedin-in"
+                            style="color: black;"></i></a>
+                    <a href="https://x.com/Meesho_Official/?mx=2"><i class="fab fa-twitter"
+                            style="color: black;"></i></a>
+                </div>
+            </div>
+            <div class="footer-section4">
+                <h4>Contact Us</h4>
+                <p>
+                    Fashnear Technologies Private Limited,<br>
+                    CIN: U74900KA2015PTC082263<br>
+                    3rd Floor, Wing-E, Helios Business Park,<br>
+                    Kadubeesanahalli Village, Varthur Hobli,<br>
+                    Outer Ring Road, Bellandur, Bangalore,<br>
+                    Karnataka, India, 560103<br>
+                    E-mail: query@meesho.com<br>
+                    © 2015-2025 Meesho.com
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2015-2025 Meesho.com | All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+
+
+    var productdetails = JSON.parse(localStorage.getItem("value")) || [];
+
+
+    if (productdetails) {
+        const container = document.getElementById("product-details");
+
+
+        const img = document.createElement("img");
+        img.src = productdetails.img;
+
+        container.append(img)
+
+        var details = document.getElementById("img-details1")
+
+        const title = document.createElement("h1");
+        title.innerHTML = productdetails.Title;
+        title.style.fontSize = "19px"
+        title.style.color = "#6c757d"
+
+        const price = document.createElement("h1");
+        price.innerHTML = `₹${productdetails.price}`;
+        price.style.fontSize = "35px"
+
+        const delivery = document.createElement("p");
+        delivery.innerHTML = productdetails.delivery;
+        delivery.style.fontWeight = "550"
+        delivery.style.fontSize = "14px"
+
+        var qty = document.createElement("h6")
+        qty.innerHTML = `Quantity : ${productdetails.qty}`
+        qty.style.fontWeight = "600"
+
+        const button = document.createElement("button")
+        button.innerHTML = "ADD TO CART"
+        button.style.backgroundColor = "white"
+        button.style.color = "#ed0ed3"
+        button.style.border = "1px solid #ed0ed3";
+
+        button.addEventListener("click", function () {
+            addToCart(productdetails);
+        });
+
+        var btn1 = document.createElement("button");
+        btn1.innerHTML = "BUY NOW";
+        btn1.addEventListener("click", function () {
+            makePayment()
+        })
+
+        details.append(title, price, delivery, qty, button, btn1);
+
+
+
+    }
+
+    function addToCart(product) {
+
+        var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+        cart.push(product);
+
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Product added to cart!");
+
+        window.location.href = "index.html";
+    }
+
+    function makePayment() {
+        window.location.href = "payment.html"
+    }
+
+</script>
